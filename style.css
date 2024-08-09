@@ -83,7 +83,7 @@ body {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
   }
-  
+
   .R {
     padding: 20px;
     text-align: center;
@@ -143,136 +143,83 @@ body {
     color: rgb(48, 96, 52);
   }
 
-.agenda2030 {
-  font-family: "Chakra Petch", sans-serif;
-  background-color: var(--preto);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 20px 0;
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.titulo-agenda {
-  font-family: "Chakra Petch", sans-serif;
-  color: var(--branco);
-  text-align: center;
-  width: 100%;
-  font-size: 32px;
+section h2 {
+    color: #2e7d32;
 }
 
-.titulo-agenda span {
-  color: var(--verde-claro);
+ul {
+    list-style: disc;
+    margin-left: 20px;
 }
 
-.botao-agenda {
-  font-family: "Chakra Petch", sans-serif;
-  background-color: var(--botao-inativo);
-  color: var(--branco);
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  font-size: 18px;
-  align-items: center;
-  width: 100%;
-  border-bottom: 4px solid var(--botao-ativo);
-  border-left: 2px solid var(--botao-ativo);
-  border-right: 2px solid var(--botao-ativo);
-  border-top: none;
-}
-
-.botao-agenda:first-child {
-  border-radius: 40px 40px 0 0;
-}
-
-.botoes-agenda {
-  display: block;
-}
-
-.botao-agenda.ativo {
-  background-color: var(--botao-ativo );
-  border-bottom: 4px solid var(--verde-claro);
-}
-
-.abas-textos {
-  background-color: var(--texto-fundo);
-  color: var(--branco);
-  padding: 40px;
-  border-radius: 0 0 40px 40px;
-}
-
-.aba-conteudo.ativo {
-  display: block;
-}
-
-.aba-conteudo {
-  display: none;
-}
-
-.aba-couteudo-titulo-principal {
-  font-size: 28px;
-  text-align: center;
-}
-
-.aba-couteudo-titulo-secundario {
-  font-size: 24px;
-  text-align: center;
-  color: var(--verde-claro);
-}
-
-.contador {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-}
-
-.contador-digito {
-  padding: 0 16px;
-  text-align: center;
-  min-width: 100px;
-}
-
-.contador-digito-numero {
-  font-size: 80px;
-  margin: 0;
-}
-
-.contador-digito-texto {
-  color: var(--verde-claro);
-  font-size: 20px;
-}
-
-@media screen and (min-width: 768px) {
-.botoes-agenda {
+.parallax {
+    background-image: url('caminho-da-imagem.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-  }
-.botao-agenda:first-child {
-  border-radius: 40px 0 0 0;
-}
-.botao-agenda:last-child {
-  border-radius: 0 40px 0 0;
-}
+    justify-content: center;
+    align-items: center;
 }
 
-  
+.parallax h2 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.parallax-sustentabilidade {
+    background-image: url('sustentabilidade-bg.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-sustentabilidade h2 {
+    color: var(--botao-inativo);
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn-sustentabilidade {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    width: fit-content;
+    margin: 20
+}
+
   .rodape {
     font-size: 18px;
     padding: 40px 0;
     text-align: center;
     background: rgb(48, 96, 52);
     color: white;
-  }
-  
-  .rodape img {
-    max-height: 40px; /* Ajuste a altura da imagem */
-  }
-  
-  .rodape .redes-sociais {
-    display: flex;
-    justify-content: center; /* Centralizar horizontalmente */
-    margin: 0 20px;
   }
   
   .copyright {
